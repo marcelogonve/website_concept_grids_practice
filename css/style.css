@@ -346,6 +346,7 @@ body {
 }
 
 .questions-title {
+    text-align: left;
     display: flex;
     font-size: 20px;
     padding: 30px 0 30px;
@@ -512,5 +513,149 @@ body {
         right: 30px;
         width: 30px;
         cursor: pointer;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .about-main {
+        gap: 2em;
+    }
+
+    .about-icons:last-of-type {
+        grid-column: 1/-1;
+    }
+
+    .knowledge-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+        gap: 3em;
+        text-align: center;
+    }
+
+    .knowledge-picture {
+        grid-row: 1/2;
+        justify-self: center;
+    }
+
+    .testimony-container {
+        grid-template-columns: 30px 1fr 30px;
+    }
+
+    .testimony-body {
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content max-content;
+        gap: 3em;
+        justify-items: center;
+    }
+
+    .testimony-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .questions-copy {
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-wrap: wrap;
+    }
+
+    .nav--footer {
+        width: 100%;
+        justify-items: center;
+    }
+
+    .nav-link--footer {
+        width: 100%;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+    .footer-form {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .footer-input {
+        flex: 1;
+    }
+}
+
+@media (max-width:600px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-paragraph {
+        font-size: 1rem;
+    }
+
+    .subtitle {
+        font-size: 1.8rem;
+    }
+
+    .price-element {
+        width: 90%;
+    }
+
+    .price-element--best {
+        width: 90%;
+        padding: 40px;
+    }
+
+    .plan-price {
+        font-size: 2rem;
+    }
+
+    .testimony {
+        --pading-container: 60px 0;
+    }
+
+    .testimony-container {
+        grid-template-columns: 28px 1fr 28px;
+        gap: .9em;
+    }
+
+    .testimony-arroy {
+        width: 100%;
+    }
+
+    .testimony-course {
+        margin-top: 15px;
+    }
+
+    .questions-title {
+        font-size: 1rem;
+    }
+
+    .nav--footer {
+        padding-bottom: 60px;
+    }
+
+    .footer-title {
+        justify-self: start;
+        margin-bottom: 15px;
+    }
+
+    .nav-link--footer {
+        justify-content: space-between;
+    }
+
+    .footer-inputs {
+        flex-wrap: wrap;
+    }
+
+    .footer-input {
+        flex-basis: 100%;
+        margin: 0;
+        margin-bottom: 16px;
+    }
+    
+    .footer-submit {
+        margin: 0;
+        width: 100%;
     }
 }
