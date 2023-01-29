@@ -505,10 +505,12 @@ body {
         opacity: 1;
         pointer-events: unset;
     }
+
+    .nav-close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        cursor: pointer;
+    }
 }
-
-
-
-
-
-
